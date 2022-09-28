@@ -1,0 +1,106 @@
+<h1>Distâncias absolutas e relativas</h1>
+<h2>Descrição</h2>
+<h3>Nessa aula vamos entender sobre distâncias absolutas e relativas.
+</h3>
+<h3>Distâncias absolutas <length></h3>
+<h4>São fixas e não alteram seu valor.</h4>
+
+<table width="100%" border="1px">
+
+    <caption style="background-color:yellow">
+        Distâncias absolutas
+    </caption>
+    
+
+    <colgroup>
+        <col span="0" style="background-color:rebeccapurple">
+        <col span="1" style="background-color:red">
+        <col span="2" style="background-color:blue">
+    </colgroup>
+    <thead>
+        <tr>
+            <th>Unidade</th>
+            <th>Nome</th>
+            <th>Equivalência</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td width="25%">cm</td>
+            <td width="25%">Centímetros</td>
+            <td width="25%">1cm = 96px/2.54</td>
+        </tr>
+        <tr>
+            <td width="25%">in</td>
+            <td width="25%">Inches( polegadas )</td>
+            <td width="25%">1in = 2.54cm = 96px</td>
+        </tr>
+         <tr>
+            <td width="25%">px</td>
+            <td width="25%">Pixels</td>
+            <td width="25%">1px = 1/96 of 1in</td>
+         </tr>
+    </tbody>
+</table>
+<p>
+    *o mais comum e mais utilizado é o px <br>
+    *não é recomendado usar cm
+</p>
+
+<h3>Distâncias relativas</h3>
+<h4>
+    São relativas a um outro valor, pode ser o elemento pai, ou root, ou o tamanho da tela. <br>
+    Benefício: Maior adaptação aos diferentes tipos de tela.
+</h4>
+
+<table width="100%" border="1px">
+
+    <caption style="background-color:yellow">
+        Distâncias relativas
+    </caption>
+    
+
+    <colgroup>
+        <col span="0" style="background-color:rebeccapurple">
+        <col span="1" style="background-color:red">
+        <col span="2" style="background-color:blue">
+    </colgroup>
+    <thead>
+        <tr>
+            <th width="10%">Unidade</th>
+            <th>Relativo a</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td width="25%">em</td>
+            <td width="50%">Tamanho da font do elemento pai</td>
+        </tr>
+        <tr>
+            <td width="25%">rem</td>
+            <td width="50%">Tamanho da font do elemento raiz (root/html)</td>
+        </tr>
+         <tr>
+            <td width="25%">vw</td>
+            <td width="50%">1% da viewport wid</td>
+         </tr>
+         <tr>
+            <td width="25%">vh</td>
+            <td width="50%">1% da viewport height</td>
+         </tr>
+    </tbody>
+</table>
+
+
+
+Normalmente o tamanho da font padrão do navegador é de 16px e para mudar esse valor temos que fazer a alteração no root ou no elemento html.
+:root {
+	font-size: 18px;
+}
+
+/* OU */
+
+html {
+	font-size: 18px;
+}
+O viewport é a parte da tela que está sendo exibida. No caso dos navegadores web, é o que é exibido na janela/tela do documento. Conteúdos que estão fora do viewport só serão exibidos quando feito um scroll da área de visualização.
